@@ -1,5 +1,6 @@
 import org.tbot.internal.AbstractScript;
 import org.tbot.internal.Manifest;
+import org.tbot.internal.ScriptCategory;
 import org.tbot.internal.handlers.LogHandler;
 import org.tbot.methods.*;
 import org.tbot.methods.GroundItems;
@@ -12,7 +13,7 @@ import org.tbot.wrappers.GroundItem;
 import org.tbot.wrappers.Tile;
 
 
-@Manifest(name = "rFish_Looter", authors = "Ryder", description = "Runs to the barbarian village and picks up the fish. Banks them at closest bank. Priority: Salmon>Pike>Trout (Raw)", version = 1.1)
+@Manifest(name = "rFish_Looter", authors = "Ryder", description = "Runs to the barbarian village and picks up the fish. Banks them at closest bank. Priority: Salmon>Pike>Trout (Raw)", version = 1.1, category = ScriptCategory.MONEY_MAKING)
 public class Main extends AbstractScript {
     private boolean needToBank(){
         return Inventory.isFull();
